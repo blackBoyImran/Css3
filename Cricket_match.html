@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <style>
+
+
+       .bat{
+           margin-top: 50PX;
+           transition: transform 0.2s ease-in 0.2s;
+       }
+       .header:hover .bat{
+           transform: rotate(-50deg);
+           transform-origin: 100% 0%;
+       }
+       .ball{
+           height: 50px;
+           width: 50px;
+           background-color: red;
+           border-radius: 50%;
+           position: relative;
+           left: 850px;
+           transition: transform 0.2s ease 0.4s;
+       }
+       .header:hover .ball{
+           transform: translate(1000px, -200px);
+       }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+            <img class="bat" src="midea/bat2.svg" alt="">
+        <p class="ball"></p>
+    </div>
+
+</body>
+</html>
